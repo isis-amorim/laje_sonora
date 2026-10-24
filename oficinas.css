@@ -13,13 +13,13 @@
     --branco: #FFFFFF;
 
     --fonte-cartaz: "Big Shoulders", "Arial Narrow", sans-serif;
-    --font-texto: "Archivo", Arial, sans-serif;
+    --fonte-texto: "Archivo", Arial, sans-serif;
 }
 
 body {
     background-color: var(--concreto);
     color: var(--tinta);
-    font-family: var(--font-texto);
+    font-family: var(--fonte-texto);
     font-size: 17px;
     line-height: 1.55;
     a {
@@ -70,6 +70,94 @@ h1, h2, h3 {
         border-bottom-color: var(--fita);
     }
 }
+
+.titulo-pagina {
+    font-size: 160px;
+    margin-top: 24px;
+}
+
+.subtitulo-pagina{
+    font-size: 22px;
+    max-width: 640px;
+    margin-top: 16px;
+}
+
+.filtros {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.filtro {
+    border: 2px solid var(--tinta);
+    padding: 8px 18px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.filtro.ativo {
+    background-color: var(--tinta);
+    color: var(--branco);
+}
+
+.lista {
+    margin-top: 40px;
+}
+
+.oficina {
+    padding-block: 32px;
+    border-top: 3px solid var(--tinta);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    h2 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+        
+}
+
+.oficina .foto {
+    width: 240px;
+    height: 170px;
+    flex-shrink: 0;
+} 
+
+.oficina-texto {
+    flex: 1;
+}
+
+.etiquetas {
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.etiqueta {
+    background-color: var(--branco);
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.oficina-detalhes {
+    width: 220px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    strong {
+        font-size: 17px;
+    }
+
+    a {
+        margin-top: 10px;
+        font-weight: 700;
+    }
+}
+
 
 .foto {
         height: 170px;

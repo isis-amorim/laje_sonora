@@ -232,3 +232,15 @@ h1, h2, h3 {
 .rodape-coluna {
     flex: 1;
 }
+
+@media (max-widht: 800px) {
+    .inscricao,
+    .linha,
+    .rodape-colunas {
+        flex-direction: column;
+    }
+
+    .titulo-pagina {
+        font-size: 96px;
+    }
+}
